@@ -1,0 +1,23 @@
+.body_color{
+    background-color:#CCFFF7;
+}
+.memberpic{
+    position:relative;
+    margin:2.5em 0 0 -4em;
+}
+.home_logo
+{
+    max-width:65px;
+    position:relative;
+    margin:5% 0 0 -35%;
+}
+
+.carousel .carousel-item {
+  height: 300px;
+}
+
+.carousel .carousel-item img {
+  min-height: 300px;
+  max-height: 600px;
+  object-fit: cover;
+}
