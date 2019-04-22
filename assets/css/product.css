@@ -58,5 +58,12 @@ color: red;
 { 
  width:80px;
  font-size: 15px;
+ background-color: yellow;
+ color: white;
+}
+
+.butt:hover {
+  background-color: red; 
+  color: white;
 }
 
