@@ -5,13 +5,20 @@
     position:relative;
     margin:2.5em 0 0 -4em;
 }
+/*sidebar收回的大小*/
 .home_logo
 {
     max-width:65px;
     position:relative;
     margin:5% 0 0 -35%;
 }
-
+/*sidebar沒有收回的大小*/
+.logo{
+    max-width:80%;
+    position:relative;
+    margin:5% 0 0 0%;
+}
+/*幻燈片 CSS*/
 .carousel .carousel-item {
   height: 300px;
 }
@@ -20,4 +27,17 @@
   min-height: 300px;
   max-height: 600px;
   object-fit: cover;
+}
+/*footer CSS*/
+footer {
+    background: #343a40;
+    padding: 40px;
+}
+footer a {
+    color: #f8f9fa!important
+}
+
+.a1{
+    padding-right:0px;
+    padding-left: 0px;
 }
