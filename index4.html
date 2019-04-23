@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,8 +17,6 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
-
 </head>
 
 <body class="body_color">
@@ -38,10 +35,40 @@
                          <span style="color: #FE938C;">帳號</span><input style="max-width:85%;" class="form-control" type="search" placeholder="Account...">
                          <span style="color: #FE938C;">密碼</span><input style="max-width:85%;"  class="form-control" type="search" placeholder="Password...">
                        <button class="btn btn-outline-danger mt-2" type="submit">登入</button>
-                        <input type="button" value="註冊" onclick="window.location.href='index.html';" class="btn btn-outline-danger mt-2">
+                        <input type="button" value="註冊" class="btn btn-outline-danger mt-2" data-toggle="modal" data-target="#myModal">
                     </li>
                 </ul>
             </form>
+<!--            註冊跳出頁面--Start-->
+            <form>
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="myModalLabel" style="color: #FE938C;">
+                                   註冊
+                                </h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                    &times;
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <span style="color: #FE938C;">帳號</span><input style="max-width:85%;" class="form-control" type="search" placeholder="Account...">
+                                 <span style="color: #FE938C;">密碼</span><input style="max-width:85%;"  class="form-control" type="search" placeholder="Password...">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">關閉
+                                </button>
+                                <button type="submit" class="btn btn-primary">
+                                    註冊完成
+                                </button>
+                            </div>
+                        </div><!-- /.modal-content -->
+                    </div><!-- /.modal -->
+                </div>
+            </form>
+<!--            註冊跳出頁面--End-->
+<!--            側邊欄--Start!!-->
             <div class="line"></div>
             <ul class="list-unstyled components">
                 
@@ -115,8 +142,8 @@
                         </button>
                         <div>
                             <form class="form-inline">
-                                <input class="ml-4 form-control mr-sm-2" type="search" placeholder="seach something">
-                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                                <input class="ml-4 form-control mr-sm-2" type="search" placeholder="seach something" style="display:flex;">
+                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="display:flex;">Search</button>
                             </form>
                         </div>
                         <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -306,7 +333,7 @@
     </script>
     
 <!--    js-->
-    <script type="text/javascript" src="js/main_image.js" ></script>
+  
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.parallax.js"></script>
