@@ -19,7 +19,7 @@ p {
 a,
 a:hover,
 a:focus {
-    color: #fff;
+    color: #FE938C;
     text-decoration: none;
     transition: all 0.3s;
 }
@@ -63,7 +63,8 @@ span {
 #sidebar {
     min-width: 250px;
     max-width: 250px;
-    background: #FE938C;
+/*    background: #FE938C;*/
+    background:rgb(242,243,233);
     color: #fff;
     transition: all 0.3s;
 }
@@ -115,7 +116,12 @@ span {
 
 #sidebar .sidebar-header {
     padding: 20px;
-    background:#FE938C;
+    background:rgb(242,243,233);
+    background-image: url(https://i.screenshot.net/m5yerhm);
+    background-position: 0 -90%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;  
 }
 
 #sidebar .sidebar-header strong {
@@ -147,8 +153,9 @@ span {
 
 #sidebar ul li.active>a,
 a[aria-expanded="true"] {
-    color: #fff;
-    background: #FE938C;
+    color: #FE938C;
+/*    background: #FE938C;*/
+    background:rgb(242,243,233);
 }
 
 a[data-toggle="collapse"] {
@@ -166,7 +173,7 @@ a[data-toggle="collapse"] {
 ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
-    background:#E6B89C;
+    background:#DEE0C7;
 }
 
 ul.CTAs {

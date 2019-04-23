@@ -16,7 +16,8 @@
 .logo{
     max-width:80%;
     position:relative;
-    margin:5% 0 0 0%;
+/*    margin:10% 0 0 0%;*/
+    left:9%;
 }
 /*幻燈片 CSS*/
 .carousel .carousel-item {
@@ -40,4 +41,14 @@ footer a {
 .a1{
     padding-right:0px;
     padding-left: 0px;
+}
+
+.bg_image{
+/*
+  background-image: url(https://i.screenshot.net/m5yerhm);
+  background-position: 0 1%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;  
+*/
 }
