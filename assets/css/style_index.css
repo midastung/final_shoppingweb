@@ -1,5 +1,5 @@
 .body_color{
-    background-color:#CCFFF7;
+    background-color:rgb(224,220,158);
 }
 .memberpic{
     position:relative;
@@ -34,7 +34,7 @@ footer {
     background: #343a40;
     padding: 40px;
 }
-footer a {
+footer a{
     color: #f8f9fa!important
 }
 
@@ -43,12 +43,11 @@ footer a {
     padding-left: 0px;
 }
 
+/*首頁底圖*/
 .bg_image{
-/*
-  background-image: url(https://i.screenshot.net/m5yerhm);
-  background-position: 0 1%;
+  background-image: url(https://i.screenshot.net/26p0ohg);
+  background-position: 0 0;
   background-repeat: no-repeat;
   background-size: 100%;
   position: relative;  
-*/
 }
