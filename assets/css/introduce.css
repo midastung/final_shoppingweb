@@ -2,19 +2,14 @@
 {
 height: 75px;
 }
-.introduce_content
-{
-float: left;
-background-color: #FFFFFF;
-height: 490px;
-width: 470px;
-}
+
 .introduce_image
 {
 height: 370px;
 width: 420px;
 display: block;
-margin: auto;
+margin-right: auto;
+margin-left: auto;
 }
 .introduce_title
 {
@@ -35,6 +30,7 @@ font-size: 18px;
 display: inline-block;
 font-size: 15px;
 }
+
 .introduce_list
 {
 float: left;
