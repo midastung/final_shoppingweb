@@ -1,257 +1,280 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <title>Collapsible sidebar using Bootstrap 4</title>
-    <link rel="stylesheet" href="assets/css/animate.css">
-    <link rel="stylesheet" href="assets/css/theme.css">
-    <link rel="stylesheet" href="assets/css/style_index.css">
-    <!-- Bootstrap CSS CDN -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <!-- Our Custom CSS -->
-    <link rel="stylesheet" href="assets/css/style_sidebar.css">
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <!-- Font Awesome JS -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
-</head>
-
-<body class="body_color">
-    <!-- PRE LOADER -->
-    <div class="wrapper">
-        <!-- Sidebar  -->
-        <nav id="sidebar">
-            <div class="sidebar-header">
-                <h3 style="color:#000000;"><img src="assets/images/logo2.png" class="logo"></h3>
-                <strong><img src="assets/images/logo2.png" class="home_logo"></strong>
-            </div>
-            <div class="line"></div>
-            <form>
-                <ul class="list-unstyled CTAs">
-                    <li>
-                        <span style="color: #FE938C;">帳號</span><input style="max-width:85%;" class="form-control" type="search" placeholder="Account...">
-                        <span style="color: #FE938C;">密碼</span><input style="max-width:85%;" class="form-control" type="search" placeholder="Password...">
-                        <button class="btn btn-outline-danger mt-2" type="submit">登入</button>
-                        <input type="button" value="註冊" class="btn btn-outline-danger mt-2" data-toggle="modal" data-target="#myModal">
-                    </li>
-                </ul>
-            </form>
-            <!--            註冊跳出頁面--Start-->
-            <form>
-                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h4 class="modal-title" id="myModalLabel" style="color: #FE938C;">
-                                    註冊
-                                </h4>
-                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                                    &times;
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <span style="color: #FE938C;">帳號</span><input style="max-width:85%;" class="form-control" type="search" placeholder="Account...">
-                                <span style="color: #FE938C;">密碼</span><input style="max-width:85%;" class="form-control" type="search" placeholder="Password...">
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">關閉
-                                </button>
-                                <button type="submit" class="btn btn-primary">
-                                    註冊完成
-                                </button>
-                            </div>
-                        </div><!-- /.modal-content -->
-                    </div><!-- /.modal -->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Collapsible sidebar using Bootstrap 4</title>
+        <link rel="stylesheet" href="assets/css/product.css">
+        <link rel="stylesheet" href="assets/css/animate.css">
+        <link rel="stylesheet" href="assets/css/theme.css">
+        <link rel="stylesheet" href="assets/css/style_index.css">
+        <!-- Bootstrap CSS CDN -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <!-- Our Custom CSS -->
+        <link rel="stylesheet" href="assets/css/style_sidebar.css">
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+        <!-- Font Awesome JS -->
+        <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    </head>
+    <body class="body_color">
+        <!-- PRE LOADER -->
+        <div class="wrapper">
+            <!-- Sidebar  -->
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <h3 style="color:#000000;"><img src="assets/images/logo2.png" class="logo"></h3>
+                    <strong><img src="assets/images/logo2.png" class="home_logo"></strong>
                 </div>
-            </form>
-            <!--            註冊跳出頁面--End-->
-            <!--            側邊欄--Start!!-->
-            <div class="line"></div>
-            <ul class="list-unstyled components">
-
-                <li>
-                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                        <i class="fas fa-home"></i>
-                        Home
-                    </a>
-                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                <div class="line"></div>
+                <form>
+                    <ul class="list-unstyled CTAs">
                         <li>
-                            <a href="#">Home 1</a>
-                        </li>
-                        <li>
-                            <a href="#">Home 2</a>
-                        </li>
-                        <li>
-                            <a href="#">Home 3</a>
+                            <span style="color: #FE938C;">帳號</span><input style="max-width:85%;" class="form-control" type="search" placeholder="Account...">
+                            <span style="color: #FE938C;">密碼</span><input style="max-width:85%;" class="form-control" type="search" placeholder="Password...">
+                            <button class="btn btn-outline-danger mt-2" type="submit">登入</button>
+                            <input type="button" value="註冊" class="btn btn-outline-danger mt-2" data-toggle="modal" data-target="#myModal">
                         </li>
                     </ul>
-                </li>
-
-                <li>
-                    <a href="#">
-                        <i class="fas fa-briefcase"></i>
-                        About
-                    </a>
-                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                        <i class="fas fa-copy"></i>
-                        Pages
-                    </a>
-                    <ul class="collapse list-unstyled" id="pageSubmenu">
-                        <li>
-                            <a href="product1.html">Product 1</a>
-                        </li>
-                        <li>
-                            <a href="product2.html">Product 2</a>
-                        </li>
-                        <li>
-                            <a href="product3.html">Product 3</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fas fa-image"></i>
-                        Portfolio
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fas fa-question"></i>
-                        FAQ
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fas fa-paper-plane"></i>
-                        Contact
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        <!-- Page Content  -->
-        <div class="container-fluid mx-auto">
-            <div id="content">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <div class="container-fluid">
-                        <button type="button" id="sidebarCollapse" class="btn btn-info">
-                            <i class="fas fa-align-left"></i>
-                            <span>Menu</span>
-                        </button>
-                        <div>
-                            <form class="form-inline">
-                                <input class="ml-4 form-control mr-sm-2" type="search" placeholder="seach something" style="display:flex;">
-                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="display:flex;">Search</button>
-                            </form>
-                        </div>
-                        <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <i class="fas fa-align-justify"></i>
-                        </button>
-
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="nav navbar-nav ml-auto">
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="#">Page</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Page</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Page</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Page</a>
-                                </li>
-                            </ul>
+                </form>
+                <!--            註冊跳出頁面--Start-->
+                <form>
+                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title" id="myModalLabel" style="color: #FE938C;">
+                                    註冊
+                                    </h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                    &times;
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <span style="color: #FE938C;">帳號</span><input style="max-width:85%;" class="form-control" type="search" placeholder="Account...">
+                                    <span style="color: #FE938C;">密碼</span><input style="max-width:85%;" class="form-control" type="search" placeholder="Password...">
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">關閉
+                                    </button>
+                                    <button type="submit" class="btn btn-primary">
+                                    註冊完成
+                                    </button>
+                                </div>
+                                </div><!-- /.modal-content -->
+                                </div><!-- /.modal -->
+                            </div>
+                        </form>
+                        <!--            註冊跳出頁面--End-->
+                        <!--            側邊欄--Start!!-->
+                        <div class="line"></div>
+                        <ul class="list-unstyled components">
+                            <li>
+                                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                                    <i class="fas fa-home"></i>
+                                    Home
+                                </a>
+                                <ul class="collapse list-unstyled" id="homeSubmenu">
+                                    <li>
+                                        <a href="#">Home 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Home 2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Home 3</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-briefcase"></i>
+                                    About
+                                </a>
+                                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                                    <i class="fas fa-copy"></i>
+                                    Pages
+                                </a>
+                                <ul class="collapse list-unstyled" id="pageSubmenu">
+                                    <li>
+                                        <a href="product1.html">Product 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="product2.html">Product 2</a>
+                                    </li>
+                                    <li>
+                                        <a href="product3.html">Product 3</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-image"></i>
+                                    Portfolio
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-question"></i>
+                                    FAQ
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-paper-plane"></i>
+                                    Contact
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- Page Content  -->
+                    <div class="container-fluid mx-auto">
+                        <div id="content">
+                            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                                <div class="container-fluid">
+                                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                                    <i class="fas fa-align-left"></i>
+                                    <span>Menu</span>
+                                    </button>
+                                    <div>
+                                        <form class="form-inline">
+                                            <input class="ml-4 form-control mr-sm-2" type="search" placeholder="seach something" style="display:flex;">
+                                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="display:flex;">Search</button>
+                                        </form>
+                                    </div>
+                                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <i class="fas fa-align-justify"></i>
+                                    </button>
+                                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                        <ul class="nav navbar-nav ml-auto">
+                                            <li class="nav-item active">
+                                                <a class="nav-link" href="#">Page</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">Page</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">Page</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">Page</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
+                            <div class="container p-0 m-0">
+                                <div class="row product_inf">
+                                    <div class="card col-2 product" >
+                                        <img class="card-img-top" src="assets/images/B502logo.png" style="height:45%">
+                                        <div class="card-body">
+                                            <h4 class="card-title">John Doe</h4>
+                                            <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                                            <a href="#" class="btn btn-primary  mr-4">加購物車</a>
+                                            <a href="#" class="btn btn-primary ">我的最愛</a>
+                                        </div>
+                                    </div>
+                                    <div class="card col-2 product" >
+                                        <img class="card-img-top" src="assets/images/B502logo.png" style="height:45%">
+                                        <div class="card-body">
+                                            <h4 class="card-title">John Doe</h4>
+                                            <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                                            <a href="#" class="btn btn-primary mr-4">加購物車</a>
+                                            <a href="#" class="btn btn-primary ">我的最愛</a>
+                                        </div>
+                                    </div>
+                                    <div class="card col-2 product">
+                                        <img class="card-img-top" src="assets/images/B502logo.png" style="height:45%">
+                                        <div class="card-body">
+                                            <h4 class="card-title">John Doe</h4>
+                                            <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                                            <a href="#" class="btn btn-primary  mr-4">加購物車</a>
+                                            <a href="#" class="btn btn-primary ">我的最愛</a>
+                                        </div>
+                                    </div>
+                                    <div class="card col-2 product">
+                                        <img class="card-img-top" src="assets/images/B502logo.png" style="height:45%">
+                                        <div class="card-body">
+                                            <h4 class="card-title">John Doe</h4>
+                                            <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                                            <a href="#" class="btn btn-primary prduct_btn  mr-4">加購物車</a>
+                                            <a href="#" class="btn btn-primary prduct_btn">我的最愛</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </nav>
-            </div>
-        </div>
-    </div>
-<!--    商品列表開始-->
-    <div class="container">
-        <div class="row">
-            <div class=""></div>
-        </div>
-    </div>
-<!--    Footer-->
-    <footer class="text-light" style="background-color:#FE938C ">
-        <div class="container">
-            <div class="row wow fadeInUp footer-copyright" data-wow-delay="1.8s">
-                <div class="col-md-3 col-lg-4 col-xl-3 ">
-                    <h5>About</h5>
-                    <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
-                    <p class="mb-0" style="color:white;">
-                        midas is handsome
-                    </p>
                 </div>
-
-                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto">
-                    <h5>Informations</h5>
-                    <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
-                    <ul class="list-unstyled">
-                        <li><a href="">Link 1</a></li>
-                        <li><a href="">Link 2</a></li>
-                        <li><a href="">Link 3</a></li>
-                        <li><a href="">Link 4</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto">
-                    <h5>Others links</h5>
-                    <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
-                    <ul class="list-unstyled">
-                        <li><a href="">Link 1</a></li>
-                        <li><a href="">Link 2</a></li>
-                        <li><a href="">Link 3</a></li>
-                        <li><a href="">Link 4</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-md-4 col-lg-3 col-xl-3">
-                    <h5>Contact</h5>
-                    <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
-                    <ul class="list-unstyled">
-                        <li><i class="fa fa-home mr-2"></i> My company</li>
-                        <li><i class="fa fa-envelope mr-2"></i> email@example.com</li>
-                        <li><i class="fa fa-phone mr-2"></i> + 33 12 14 15 16</li>
-                        <li><i class="fa fa-print mr-2"></i> + 33 12 14 15 16</li>
-                    </ul>
-                </div>
-
-            </div>
-        </div>
-    </footer>
-
-    <!-- jQuery CDN - Slim version (=without AJAX) -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <!-- Popper.JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-    <!-- Bootstrap JS -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('#sidebarCollapse').on('click', function() {
-                $('#sidebar').toggleClass('active');
-            });
-        });
-    </script>
-
-    <!--    js-->
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.parallax.js"></script>
-    <script src="js/smoothscroll.js"></script>
-    <script src="js/wow.min.js"></script>
-
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-
-</body>
-
-</html>
+                <!--    商品列表開始-->
+                <div class="container">
+                    <div class="row">
+                        
+                    </div>
+                    <!--    Footer-->
+                    <footer class="text-light" style="background-color:#FE938C ">
+                        <div class="container">
+                            <div class="row wow fadeInUp footer-copyright" data-wow-delay="1.8s">
+                                <div class="col-md-3 col-lg-4 col-xl-3 ">
+                                    <h5>About</h5>
+                                    <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
+                                    <p class="mb-0" style="color:white;">
+                                        midas is handsome
+                                    </p>
+                                </div>
+                                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto">
+                                    <h5>Informations</h5>
+                                    <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
+                                    <ul class="list-unstyled">
+                                        <li><a href="">Link 1</a></li>
+                                        <li><a href="">Link 2</a></li>
+                                        <li><a href="">Link 3</a></li>
+                                        <li><a href="">Link 4</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto">
+                                    <h5>Others links</h5>
+                                    <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
+                                    <ul class="list-unstyled">
+                                        <li><a href="">Link 1</a></li>
+                                        <li><a href="">Link 2</a></li>
+                                        <li><a href="">Link 3</a></li>
+                                        <li><a href="">Link 4</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4 col-lg-3 col-xl-3">
+                                    <h5>Contact</h5>
+                                    <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
+                                    <ul class="list-unstyled">
+                                        <li><i class="fa fa-home mr-2"></i> My company</li>
+                                        <li><i class="fa fa-envelope mr-2"></i> email@example.com</li>
+                                        <li><i class="fa fa-phone mr-2"></i> + 33 12 14 15 16</li>
+                                        <li><i class="fa fa-print mr-2"></i> + 33 12 14 15 16</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                    <!-- jQuery CDN - Slim version (=without AJAX) -->
+                    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+                    <!-- Popper.JS -->
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+                    <!-- Bootstrap JS -->
+                    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+                    <script type="text/javascript">
+                    $(document).ready(function() {
+                    $('#sidebarCollapse').on('click', function() {
+                    $('#sidebar').toggleClass('active');
+                    });
+                    });
+                    </script>
+                    <!--    js-->
+                    <script src="js/jquery.js"></script>
+                    <script src="js/bootstrap.min.js"></script>
+                    <script src="js/jquery.parallax.js"></script>
+                    <script src="js/smoothscroll.js"></script>
+                    <script src="js/wow.min.js"></script>
+                    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+                </body>
+            </html>
